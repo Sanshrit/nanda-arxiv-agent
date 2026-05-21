@@ -48,7 +48,7 @@ def fetch_arxiv_abstracts(topic: str, max_results: int = 5) -> list[dict]:
     Fetch latest abstracts from arXiv for a given topic.
     Returns a list of dicts with title, authors, abstract, url.
     """
-    base_url = "http://export.arxiv.org/api/query"
+    base_url = "https://export.arxiv.org/api/query"
     params = {
         "search_query": f"all:{topic}",
         "start": 0,
